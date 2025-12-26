@@ -10,7 +10,7 @@ _No virtual DOM. No useEffect. Just pure reactivity._
 [![npm version](https://img.shields.io/npm/v/@ochairo/signals)](https://www.npmjs.com/package/@ochairo/signals)
 [![npm downloads](https://img.shields.io/npm/dm/@ochairo/signals)](https://www.npmjs.com/package/@ochairo/signals)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@ochairo/signals)](https://bundlephobia.com/package/@ochairo/signals)
-![CD](https://github.com/ochairo/signals/workflows/CD/badge.svg)
+![CI](https://github.com/ochairo/signals/workflows/CI/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 </div>
