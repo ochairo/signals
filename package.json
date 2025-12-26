@@ -1,0 +1,51 @@
+{
+  "name": "@ochairo/signals",
+  "version": "0.0.1",
+  "description": "Fine-grained reactive primitives - framework-agnostic signals implementation",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && pnpm build:minify",
+    "build:minify": "esbuild dist/index.js dist/signal.js dist/tracking.js --outdir=dist --format=esm --allow-overwrite --minify --legal-comments=none --tree-shaking=true",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "size": "ls -lh dist/*.js | awk '{print $9, $5}'"
+  },
+  "keywords": [
+    "signals",
+    "reactive",
+    "reactivity",
+    "state-management",
+    "fine-grained",
+    "ochairo"
+  ],
+  "author": "ochairo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ochairo/signals"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "esbuild": "^0.27.2",
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.15"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
