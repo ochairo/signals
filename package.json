@@ -1,6 +1,6 @@
 {
   "name": "@ochairo/signals",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fine-grained reactive primitives - framework-agnostic signals implementation",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,7 +12,10 @@
     }
   },
   "files": [
-    "dist",
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/*.test.*",
+    "!dist/**/*.map",
     "README.md"
   ],
   "scripts": {
